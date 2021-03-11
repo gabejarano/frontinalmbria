@@ -1,0 +1,61 @@
+<section class="Form my-4 mx-5">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./assets/img/login.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <img src="./assets/img/logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 class="text-center"> Registrarse</h4>
+                            <form>
+                                <div class="form-row">
+                                    <div class="col-lg-2">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <input type="text" [(ngModel)]="usuario.nombre" class="form-control my-3 p-4"
+                                            placeholder="Nombre" name="nombre">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-lg-2">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <input type="email" [(ngModel)]="usuario.correo" class="form-control my-3 p-4"
+                                            placeholder="Usuario o Email" name="email">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-lg-2">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <input type="password" [(ngModel)]="usuario.password"
+                                            class="form-control my-3 p-4" placeholder="Contraseña" name="password">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-lg-2">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <button type="button" class="btn btn-primary btn-block my-4 "  (click)="crearUsuario()"
+                                            >Enviar</button>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-lg-2"></div>
+                                    <div class="col-lg-7">
+                                       <p> ¿Ya tienes cuenta?, Inicia sesión <a routerLink="/login"> aquí</a></p>  
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
